@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            </header>
+
+        <section class="task-form-section">
+            <h3>Add a New Task</h3>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="title">Task Title</label>
+                    <input type="text" id="title" placeholder="Task Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Task Description</label>
+                    <input type="text" id="description" placeholder="Task Description" required>
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="btn">
+                <button type="submit">Add Task</button>
+            </div>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h3>Tasks</h3>
+            <div id="filterContainer">
+                <label for="filter">Filter by priority:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

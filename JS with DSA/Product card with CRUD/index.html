@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page with CRUD Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Page with CRUD Operations</h1>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Product Price" required>
+            <input type="text" id="product-category" placeholder="Product Category" required>
+            <button type="submit">Add Product</button>
+        </form>
+        <div class="controls">
+            <input type="text" id="search-title" placeholder="Search by Title">
+            <select id="sort-price">
+                <option value="">Sort by Price</option>
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+            <input type="text" id="filter-category" placeholder="Filter by Category">
+        </div>
+        <ul id="product-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
